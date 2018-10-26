@@ -7,9 +7,10 @@ notifications:
   email: false
 node_js:
   - '10'
+install:
+  - npm install
 before_script:
   - npm prune
-  - npm install
 script:
   - npm test
 after_success:
