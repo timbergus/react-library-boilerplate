@@ -9,12 +9,7 @@ node_js:
   - '10'
 install:
   - npm install
-before_script:
-  - npm prune
 script:
   - npm test
 after_success:
   - npm run travis-deploy-once "npm run semantic-release"
-branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
