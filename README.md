@@ -4,20 +4,20 @@ This project creates a library for React components. It is based on [Styleguidis
 
 ## Scripts
 
-* __clean:__ This script deletes __dist__ folder.
-* __start:__ This script launch the catalog at [localhost:3100](http://localhost:3100).
-* __test:__ This script launch the catalog's tests: [eslint](https://eslint.org/), [sass-lint](https://github.com/sasstools/sass-lint) and [Jest](https://jestjs.io/), tests and coverage.
-* __test\:watch\:__ This script serves only to create Jest's tests. It opens the Jest's watch mode and allow you to work with Jest's test tools.
-* __build:__ This is the script to build the library distribution.
-* __build:styleguide:__ This is the script to build the catalog distribution as web page.
+* __clean ->__ This script deletes __dist__ folder.
+* __start ->__ This script launch the catalog at [localhost:3100](http://localhost:3100).
+* __test ->__ This script launch the catalog's tests: [eslint](https://eslint.org/), [sass-lint](https://github.com/sasstools/sass-lint) and [Jest](https://jestjs.io/), tests and coverage.
+* __test:watch ->__ This script serves only to create Jest's tests. It opens the Jest's watch mode and allow you to work with Jest's test tools.
+* __build ->__ This is the script to build the library distribution.
+* __build:styleguide ->__ This is the script to build the catalog distribution as web page.
 
 ## File and Folder Structure
 
-* __\_\_tests\_\_:__ This folder contains all the tests for the catalog.
-* __config:__ This folder contains the configuration files for the library.
-  * __tests:__ These folder contains the configuration files for Jest.
-  * __modules.js:__ These are the folder inside the __src__ folder that will be used to build the library, and that will be counted for the test coverage.
-* __src:__ This folder contains all the source code for the library.
+* __\_\_tests\_\_ ->__ This folder contains all the tests for the catalog.
+* __config ->__ This folder contains the configuration files for the library.
+  * __tests ->__ These folder contains the configuration files for Jest.
+  * __modules.js ->__ These are the folder inside the __src__ folder that will be used to build the library, and that will be counted for the test coverage.
+* __src ->__ This folder contains all the source code for the library.
 
 The rest of the files out of this folders are configuration files for the development environment of the library. They are mostly self descriptive.
 
