@@ -51,10 +51,7 @@ At the beginning of the document you can add whatever you want that describes yo
 
 ## Useful Links
 
-[Badges](https://shields.io)
-
-[Why are you still using Yarn in 2018?](https://iamturns.com/yarn-vs-npm-2018/)
-
-[Releases with semantic-release](https://egghead.io/lessons/javascript-automating-releases-with-semantic-release)
-
-[Introduction to semantic-release](https://blog.greenkeeper.io/introduction-to-semantic-release-33f73b117c8)
+* [Badges](https://shields.io)
+* [Why are you still using Yarn in 2018?](https://iamturns.com/yarn-vs-npm-2018/)
+* [Releases with semantic-release](https://egghead.io/lessons/javascript-automating-releases-with-semantic-release)
+* [Introduction to semantic-release](https://blog.greenkeeper.io/introduction-to-semantic-release-33f73b117c8)
