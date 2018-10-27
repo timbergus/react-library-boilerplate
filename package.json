@@ -1,6 +1,6 @@
 {
   "name": "react-library-template",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "This is a template to create a component library for React.",
   "main": "dist/index.js",
   "repository": {
