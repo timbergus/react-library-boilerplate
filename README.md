@@ -1,33 +1,31 @@
-# Library Builder Base Project
+# React Library Builder
 
-This project creates a library for React components.
+This project creates a library for React components. It is based on [Styleguidist](https://github.com/styleguidist/react-styleguidist) to create the component catalog and [Babel](https://babeljs.io/) and [Sass](https://sass-lang.com/) to create the catalog distribution.
 
 ## Scripts
 
-* __clean:__ This script deletes the __dist__ folder. This folder contains the files needed for the library, that will be published, and will be created each time.
-* __start:__ This script launch a tool called [Styleguidist](https://github.com/styleguidist/react-styleguidist) that creates a component catalog. This catalog is the main development tool for a component library.
-* __start:in-app:__ This script allow us to develop components that needs from the main app to be displayed. This script copies the __src__ folder inside the __node_modules/<lib_name>__ and reload the main application to see the result.
-* __test:__ This script launch the tests for the application: JavaScript linter, Sass linter and Jest test and coverage.
-* __test:watch:__ This script is only to create Jest's tests. It opens the Jest's watch mode and allow you to work with Jest's test tools.
+* __clean:__ This script deletes __dist__ folder.
+* __start:__ This script launch the catalog at [localhost:3100](http://localhost:3100).
+* __test:__ This script launch the catalog's tests: [eslint](https://eslint.org/), [sass-lint](https://github.com/sasstools/sass-lint) and [Jest](https://jestjs.io/), tests and coverage.
+* __test:watch:__ This script serves only to create Jest's tests. It opens the Jest's watch mode and allow you to work with Jest's test tools.
 * __build:__ This is the script to build the library distribution.
-* __build:styleguide:__ This is the script to build the catalog of the app in case it is a component library. This catalog can be published as an autonomous webpage to be consulted.
+* __build:styleguide:__ This is the script to build the catalog distribution as web page.
 
 ## File and Folder Structure
 
-* __\_\_tests\_\_:__ This folder contains all the tests for the library.
+* __\_\_tests\_\_:__ This folder contains all the tests for the catalog.
 * __config:__ This folder contains the configuration files for the library.
-  * __modules.js:__ These are the folder inside the __rsc__ folder that will be used to build the library.
+  * __tests:__ These folder contains the configuration files for Jest.
+  * __modules.js:__ These are the folder inside the __src__ folder that will be used to build the library, and that will be counted for the test coverage.
 * __src:__ This folder contains all the source code for the library.
 
-The rest of the files out of this folders are configuration files for the development environment of the library.
+The rest of the files out of this folders are configuration files for the development environment of the library. They are mostly self descriptive.
 
 ## How to
 
 ### Developing
 
-To develop a component library, we just need to run `npm start`. This will launch the component catalog at [localhost:3100](http://localhost:3100). All the components must be autonomous from the main application.
-
-To develop a big functionality that depends on the main application, we need to use `npm run start:in-app`. We need the main app running to, and we will visit the main app url to see the changes in our module.
+To develop a component library, we just need to run `npm start`. This will launch the component catalog at [localhost:3100](http://localhost:3100).
 
 ### Building
 
@@ -35,15 +33,15 @@ To build the final package, we just need to execute `npm run build`. This build 
 
 ### Publishing
 
-To publish the new library in Nexus, execute `npm publish`. This scripts executes `prepublish` that builds the library. Test are passed too, so if there are errors, the package won't be build, neither published.
+To publish the new library in [npm](https://www.npmjs.com/), execute `npm publish`. This scripts executes `prepublish` that builds the library. Test are passed too, so if there are errors, the package won't be build, neither published.
 
-This will be a normal npm package, so we are going to import functions or components from the package as it is. To gain this functionality, all the components or functions that the package will expose must be imported and exported inside `src/index.js`.
+To make this a normal npm library, we need to export in `src/index.js` all the elements we are going to expose to be used from our library.
 
 ## Documentation
 
-The __README.md__ is for the library. The instructions live in this __HOWTO.md__. The readme needs a description of the library and all the information needed to understand the functionality of the library.
+The __README.EX.md__ is the readme for the catalog. The instructions live in this __README.md__. Please, rename this files when using this boilerplate in order to use the other as readme.
 
-At the end of the document can exist a table (already mocked), with a list of exports and descriptions to let the people know what they can use from the library and how to use it. If we are handling a component library, the components will be already exposed in the catalog, so we only need to put everything else that does not appear in the catalog, for example, constants or functions.
+At the beginning of the document you can add whatever you want that describes your component catalog. At the end of the document you have an example of table to define other things that don't appear in the Styleguidist application, for example, functions or constants.
 
 ## Useful Tools
 
