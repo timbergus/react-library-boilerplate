@@ -1,11 +1,11 @@
 {
-  "name": "react-library-template",
+  "name": "react-library-boilerplate",
   "version": "1.0.0",
-  "description": "This is a template to create a component library for React.",
+  "description": "This is a boilerplate to create a component library for React.",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/timbergus/react-library-template.git"
+    "url": "https://github.com/timbergus/react-library-boilerplate.git"
   },
   "files": [
     "dist",
@@ -19,10 +19,7 @@
   "author": "Gustavo Muñoz <timbergus@gmail.com>",
   "license": "MIT",
   "config": {
-    "build": "./scripts/build/build.js",
-    "commitizen": {
-      "path": "./node_modules/git-cz"
-    }
+    "build": "./scripts/build/build.js"
   },
   "scripts": {
     "clean": "rimraf dist",
@@ -34,10 +31,7 @@
     "jest": "jest",
     "build": "npm run clean && npm test && cross-var node -r dotenv/config $npm_package_config_build",
     "build:styleguide": "styleguidist build",
-    "prepublish": "npm run build",
-    "commit": "npx git-cz",
-    "travis-deploy-once": "travis-deploy-once",
-    "semantic-release": "semantic-release"
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "cpx": "1.5.0",
@@ -81,9 +75,7 @@
     "sass": "1.14.3",
     "sass-lint": "1.12.1",
     "sass-loader": "7.1.0",
-    "semantic-release": "15.10.5",
     "style-loader": "0.23.1",
-    "travis-deploy-once": "5.0.9",
     "webpack": "4.23.1"
   }
 }
