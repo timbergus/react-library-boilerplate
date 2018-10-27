@@ -7,7 +7,7 @@ This project creates a library for React components. It is based on [Styleguidis
 * __clean:__ This script deletes __dist__ folder.
 * __start:__ This script launch the catalog at [localhost:3100](http://localhost:3100).
 * __test:__ This script launch the catalog's tests: [eslint](https://eslint.org/), [sass-lint](https://github.com/sasstools/sass-lint) and [Jest](https://jestjs.io/), tests and coverage.
-* __test:watch:__ This script serves only to create Jest's tests. It opens the Jest's watch mode and allow you to work with Jest's test tools.
+* __test\:watch\:__ This script serves only to create Jest's tests. It opens the Jest's watch mode and allow you to work with Jest's test tools.
 * __build:__ This is the script to build the library distribution.
 * __build:styleguide:__ This is the script to build the catalog distribution as web page.
 
